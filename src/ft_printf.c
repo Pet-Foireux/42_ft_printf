@@ -46,9 +46,9 @@ int	ft_formats(va_list args, const char format)
 	if (format == 'c')
 		nb_caracter += ft_putchar(va_arg(args, int));
 	else if (format == 's')
-		nb_caracter += ft_putstr(va_arg(args, char *));
+		nb_caracter += ft_putstr_fd(va_arg(args, char *), 1);
 	else if (format == 'p')
-		nb_caracter += ft_putptr(va_arg(args, unsigned long long));
+		nb_caracter += ft_putptr(va_arg(args, unsigned long long), 1);
 	else if (format == 'd' || format == 'i')
 		nb_caracter += ft_putnbr(va_arg(args, int));
 	else if (format == 'u')

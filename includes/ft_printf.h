@@ -21,6 +21,8 @@
 
 int	ft_putchar(int c);
 int	ft_putstr(char *str);
+int	ft_putstr_fd(char *str, int fd);
+int	ft_putptr(unsigned long long addr, int fd);
 int	ft_putpercent(void);
 int	ft_formats(va_list args, const char format);
 int	ft_printf(const char *str, ...);

@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SRC = src/ft_printf.c src/ft_puthex.c src/ft_putnbr.c src/ft_putnsigned.c src/ft_putptr.c
+SRC = src/ft_printf.c src/ft_puthex.c src/ft_putnbr.c src/ft_putnsigned.c src/ft_putptr.c src/ft_putstr_fd.c
 OBJ = $(SRC:.c=.o)
 INCLUDE = -Iinclude
 
